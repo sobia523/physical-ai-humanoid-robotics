@@ -1,0 +1,251 @@
+/**
+ * Professional Global Styles - Enhanced
+ */
+
+/* Modern Color Palette */
+:root {
+  --ifm-color-primary: #667eea;
+  --ifm-color-primary-dark: #5568e6;
+  --ifm-color-primary-darker: #4a5ee4;
+  --ifm-color-primary-darkest: #2d42d9;
+  --ifm-color-primary-light: #7788ee;
+  --ifm-color-primary-lighter: #8292f0;
+  --ifm-color-primary-lightest: #a8b4f5;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(102, 126, 234, 0.1);
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --ifm-transition-fast: 200ms;
+  --ifm-transition-slow: 400ms;
+}
+
+/* Dark Mode Enhancements */
+[data-theme='dark'] {
+  --ifm-color-primary: #8b9aff;
+  --ifm-color-primary-dark: #7485ff;
+  --ifm-color-primary-darker: #6878ff;
+  --ifm-color-primary-darkest: #3d52ff;
+  --ifm-color-primary-light: #a2b0ff;
+  --ifm-color-primary-lighter: #aebdff;
+  --ifm-color-primary-lightest: #d3dbff;
+  --docusaurus-highlighted-code-line-bg: rgba(139, 154, 255, 0.2);
+  --ifm-background-color: #0d0d0d;
+  --ifm-navbar-background-color: rgba(26, 26, 26, 0.95);
+}
+
+/* Smooth Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Enhanced Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Code Blocks with Gradient Border */
+code {
+  border-radius: 8px;
+  padding: 0.3rem 0.6rem;
+  background: rgba(102, 126, 234, 0.1);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  position: relative;
+}
+
+code::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.3;
+}
+
+[data-theme='dark'] code {
+  background: rgba(139, 154, 255, 0.15);
+}
+
+/* Professional Navbar with Subtle Effects */
+.navbar {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.95) 0%, rgba(118, 75, 162, 0.95) 100%) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar__link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  padding: 0.5rem 1rem !important;
+}
+
+.navbar__link:hover {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+.navbar__link--active {
+  color: white !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Subtle Sidebar Effects */
+.menu__link {
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.08) 0%, rgba(118, 75, 162, 0.08) 100%);
+  transform: translateX(3px);
+}
+
+.menu__link--active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  color: white !important;
+}
+
+/* Content Enhancements */
+article {
+  max-width: 900px;
+}
+
+/* Subtle Button Effects */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.25);
+}
+
+.button--primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.button--secondary {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.button--secondary:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* Table Enhancements */
+table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Professional Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #f093fb 100%);
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+/* Search Bar Styling */
+.navbar__search-input {
+  background: rgba(255, 255, 255, 0.25) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar__search-input:focus {
+  background: rgba(255, 255, 255, 0.35) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2) !important;
+}
+
+.navbar__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* GitHub Link Professional Styling */
+.navbar__item a[href*="github"] {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navbar__item a[href*="github"]:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Enhancement */
+.footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  border-top: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+/* Smooth Page Transitions */
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: pageLoad 0.6s ease-out;
+}

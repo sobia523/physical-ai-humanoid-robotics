@@ -1,0 +1,6 @@
+node_modules/
+dist/
+build/
+coverage/
+humanoid-robotics-book-docusaurus/node_modules/
+humanoid-robotics-book-docusaurus/build/

@@ -1,0 +1,29 @@
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+pnpm-lock.yaml
+coverage/
+
+# Docusaurus specific
+humanoid-robotics-book-docusaurus/build/
+humanoid-robotics-book-docusaurus/.docusaurus/
+humanoid-robotics-book-docusaurus/node_modules/
+
+# Sensitive - GitHub tokens and API keys
+.gemini/
+settings.json
+
+# General
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
